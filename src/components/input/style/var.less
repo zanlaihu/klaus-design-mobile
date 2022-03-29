@@ -1,0 +1,32 @@
+@classPrefix: ~'adw-input';
+
+.@{classPrefix} {
+  --input-color: var(--adw-input-color, var(--adw-color-content-primary, #151515));
+  --background-color: var(--adw-input-background-color, var(--adw-color-background-primary, #fff));
+  --placeholder-color: var(
+    --adw-input-placeholder-color,
+    var(--adw-color-background-tertiary, #ddd)
+  );
+  --label-active-color: var(--adw-input-active-color, var(--adw-color-brand-primary, #066dff));
+  --label-inactive-color: var(
+    --adw-input-inactive-color,
+    var(--adw-color-content-secondary, #6f6f6f)
+  );
+  --divider-active-color: var(
+    --adw-input-divider-active-color,
+    var(--adw-color-brand-primary, #066dff)
+  );
+  --divider-inactive-color: var(
+    --adw-input-divider-inactive-color,
+    var(--adw-color-background-secondary, #f2f2f2)
+  );
+  --border-active-color: var(
+    --adw-input-border-active-color,
+    var(--adw-color-brand-primary, #066dff)
+  );
+  --border-inactive-color: var(
+    --adw-input-border-inactive-color,
+    var(--adw-color-border-inactive, #999)
+  );
+  --left-right-spacing: var(--adw-input-left-right-spacing, var(--adw-spacing-base, 16px));
+}

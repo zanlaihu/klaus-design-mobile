@@ -1,0 +1,184 @@
+@import './var.less';
+@import '../../../global/mixins.less';
+
+.@{classPrefix}-wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--z-index);
+  display: none;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.@{classPrefix}-content {
+  position: relative;
+  top: var(--top);
+  left: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  width: var(--width);
+  max-width: 192px;
+  max-height: 70%;
+  padding: 24px;
+  overflow: hidden;
+  background-color: var(--background-color);
+  box-shadow: var(--box-shadow);
+  transform: translate(-50%, -50%);
+  pointer-events: auto;
+}
+
+.@{classPrefix}-show {
+  display: block;
+}
+
+.@{classPrefix}-label {
+  color: var(--label-color);
+  text-align: center;
+  .adw-body-large();
+}
+
+.@{classPrefix}-label-with-img {
+  min-width: 60px;
+  margin-top: 8px;
+}
+
+.@{classPrefix}-with-label {
+  min-width: 60px;
+  padding: 16px;
+}
+
+.@{classPrefix}-fail {
+  position: relative;
+  width: 28px;
+  height: 28px;
+  margin: auto;
+  border: solid 2px #fff;
+  border-color: #fff;
+  border-radius: 100%;
+
+  &-up {
+    position: absolute;
+    top: 12px;
+    right: 7px;
+    width: 14px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 16px;
+    transform: rotate(-45deg);
+  }
+
+  &-down {
+    position: absolute;
+    top: 12px;
+    right: 7px;
+    width: 14px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 16px;
+    transform: rotate(45deg);
+  }
+}
+
+.@{classPrefix}-success {
+  position: relative;
+  width: 28px;
+  height: 28px;
+  margin: auto;
+  border: solid 2px #fff;
+  border-color: #fff;
+  border-radius: 100%;
+
+  &-up {
+    position: absolute;
+    top: 12px;
+    right: 6.5px;
+    width: 11px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 16px;
+    transform: rotate(-45deg);
+  }
+
+  &-down {
+    position: absolute;
+    top: 14px;
+    right: 13.5px;
+    width: 7px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 16px;
+    transform: rotate(45deg);
+  }
+}
+
+.@{classPrefix}-loading {
+  width: 28px;
+  height: 28px;
+  margin: auto;
+  background: url('./../../../assets/icon/Loading.png') center no-repeat;
+  background-size: contain;
+  animation: spin 1.12s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.@{classPrefix}-color-success {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  margin: auto;
+  background-color: #4caf50;
+  border-radius: 100%;
+
+  &-up {
+    position: absolute;
+    top: 17px;
+    right: 8px;
+    width: 17px;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 16px;
+    transform: rotate(-45deg);
+  }
+
+  &-down {
+    position: absolute;
+    top: 20px;
+    right: 19px;
+    width: 11px;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 16px;
+    transform: rotate(45deg);
+  }
+}
+
+.@{classPrefix}-radius-zero {
+  border-radius: var(--adw-borderwidth-zero, 0px);
+}
+
+.@{classPrefix}-radius-small {
+  border-radius: var(--adw-radius-small);
+}
+
+.@{classPrefix}-radius-medium {
+  border-radius: var(--adw-radius-medium);
+}
+
+.@{classPrefix}-radius-large {
+  border-radius: var(--adw-radius-large);
+}
+
+.@{classPrefix}-radius-max {
+  border-radius: var(--adw-radius-full);
+}

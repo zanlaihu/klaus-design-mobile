@@ -1,0 +1,40 @@
+.demo-common-enhancer {
+  width: 20px;
+  height: 20px;
+  margin: auto;
+  background-color: #dae9ff;
+}
+
+.demo-custom-enhancer {
+  width: 10px;
+  height: 10px;
+  margin: auto;
+  background-color: #dae9ff;
+  border-radius: 100px;
+}
+
+.demo-closeCircleFill {
+  position: relative;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+
+  .line {
+    position: absolute;
+    box-sizing: border-box;
+    width: 2px;
+    height: 14px;
+    background-color: #fff;
+    border-radius: 1px;
+  }
+
+  &-leftLine {
+    transform: rotate(-45deg);
+    .line();
+  }
+
+  &-rightLine {
+    transform: rotate(45deg);
+    .line();
+  }
+}

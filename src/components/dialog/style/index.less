@@ -1,0 +1,116 @@
+@import './var.less';
+@import '../../../global/mixins.less';
+
+.@{classPrefix} {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: var(--z-index);
+  display: none;
+  box-sizing: content-box;
+  width: 280px;
+  overflow: hidden;
+  background-color: var(--adw-color-background-primary, #fff);
+  box-shadow: var(--adw-shadow-2, 0px 8px 32px 0px rgba(0, 0, 0, 0.17));
+  transform: translate(-50%, -50%);
+}
+
+.@{classPrefix}-show {
+  display: block;
+}
+
+.@{classPrefix}-enhancer {
+  max-width: 280px;
+}
+
+.@{classPrefix}-title {
+  margin: var(--adw-spacing-m, 24px) var(--adw-spacing-base, 16px) var(--adw-spacing-xs, 8px)
+    var(--adw-spacing-base, 16px);
+  color: var(--adw-color-content-primary, #151515);
+  text-align: center;
+  .adw-title-large();
+}
+
+.@{classPrefix}-content {
+  margin: var(--adw-spacing-xs, 8px) var(--adw-spacing-base, 16px) var(--adw-spacing-m, 24px)
+    var(--adw-spacing-base, 16px);
+  color: var(--adw-color-content-primary, #151515);
+  .adw-body-medium();
+  text-align: center;
+}
+
+.@{classPrefix}-button-content {
+  display: flex;
+  flex-direction: column;
+  margin: var(--adw-spacing-base, 16px);
+
+  &-row {
+    flex-direction: row-reverse;
+
+    button:first-child {
+      margin-left: 8px;
+    }
+  }
+
+  &-column {
+    button:first-child {
+      margin-bottom: 8px;
+    }
+  }
+}
+
+.@{classPrefix}-close-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.@{classPrefix}-closeCircleFill {
+  position: relative;
+  width: 15px;
+  height: 15px;
+  background-color: #ddd;
+  border-radius: 100%;
+
+  .line {
+    position: absolute;
+    top: 3px;
+    left: 7px;
+    box-sizing: border-box;
+    width: 1px;
+    height: 8px;
+    background-color: #fff;
+    border-radius: 1px;
+  }
+
+  &-leftLine {
+    transform: rotate(-45deg);
+    .line();
+  }
+
+  &-rightLine {
+    transform: rotate(45deg);
+    .line();
+  }
+}
+
+.@{classPrefix}-radius-zero {
+  border-radius: var(--adw-borderwidth-zero, 0px);
+}
+
+.@{classPrefix}-radius-small {
+  border-radius: var(--adw-radius-small);
+}
+
+.@{classPrefix}-radius-medium {
+  border-radius: var(--adw-radius-medium);
+}
+
+.@{classPrefix}-radius-large {
+  border-radius: var(--adw-radius-large);
+}
+
+.@{classPrefix}-radius-max {
+  border-radius: var(--adw-radius-full);
+}

@@ -1,0 +1,187 @@
+@import './var.less';
+@import '../../../global/mixins.less';
+
+.@{classPrefix}-content {
+  position: fixed;
+  z-index: var(--z-index);
+  overflow: auto;
+  background-color: var(--background-color);
+  transition: var(--transition);
+}
+
+.@{classPrefix}-bottom {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  transform: translate(0, 100%);
+}
+
+.@{classPrefix}-top {
+  top: 0;
+  left: 0;
+  width: 100%;
+  transform: translate(0, -100%);
+}
+
+.@{classPrefix}-left {
+  top: 0;
+  left: 0;
+  height: 100%;
+  transform: translate(-100%, 0);
+}
+
+.@{classPrefix}-right {
+  top: 0;
+  right: 0;
+  height: 100%;
+  transform: translate(100%, 0);
+}
+
+.@{classPrefix}-show {
+  box-shadow: var(--box-shadow);
+  transform: translate(0, 0);
+}
+
+// Top direction
+.@{classPrefix}-top-radius-zero {
+  border-radius: var(--adw-borderwidth-zero, 0px);
+}
+
+.@{classPrefix}-top-radius-small {
+  border-bottom-right-radius: var(--adw-radius-small, 4px);
+  border-bottom-left-radius: var(--adw-radius-small, 4px);
+}
+
+.@{classPrefix}-top-radius-medium {
+  border-bottom-right-radius: var(--adw-radius-medium, 8px);
+  border-bottom-left-radius: var(--adw-radius-medium, 8px);
+}
+
+.@{classPrefix}-top-radius-large {
+  border-bottom-right-radius: var(--adw-radius-large, 16px);
+  border-bottom-left-radius: var(--adw-radius-large, 16px);
+}
+
+.@{classPrefix}-top-radius-max {
+  border-bottom-right-radius: var(--adw-radius-full, 9999px);
+  border-bottom-left-radius: var(--adw-radius-full, 9999px);
+}
+
+// Bottom direction
+.@{classPrefix}-bottom-radius-zero {
+  border-radius: var(--adw-borderwidth-zero, 0px);
+}
+
+.@{classPrefix}-bottom-radius-small {
+  border-top-left-radius: var(--adw-radius-small, 4px);
+  border-top-right-radius: var(--adw-radius-small, 4px);
+}
+
+.@{classPrefix}-bottom-radius-medium {
+  border-top-left-radius: var(--adw-radius-medium, 8px);
+  border-top-right-radius: var(--adw-radius-medium, 8px);
+}
+
+.@{classPrefix}-bottom-radius-large {
+  border-top-left-radius: var(--adw-radius-large, 16px);
+  border-top-right-radius: var(--adw-radius-large, 16px);
+}
+
+.@{classPrefix}-bottom-radius-max {
+  border-top-left-radius: var(--adw-radius-full, 9999px);
+  border-top-right-radius: var(--adw-radius-full, 9999px);
+}
+
+// Right direction
+.@{classPrefix}-right-radius-zero {
+  border-radius: var(--adw-borderwidth-zero, 0px);
+}
+
+.@{classPrefix}-right-radius-small {
+  border-top-left-radius: var(--adw-radius-small, 4px);
+  border-bottom-left-radius: var(--adw-radius-small, 4px);
+}
+
+.@{classPrefix}-right-radius-medium {
+  border-top-left-radius: var(--adw-radius-medium, 8px);
+  border-bottom-left-radius: var(--adw-radius-medium, 8px);
+}
+
+.@{classPrefix}-right-radius-large {
+  border-top-left-radius: var(--adw-radius-large, 16px);
+  border-bottom-left-radius: var(--adw-radius-large, 16px);
+}
+
+.@{classPrefix}-right-radius-max {
+  border-top-left-radius: var(--adw-radius-full, 9999px);
+  border-bottom-left-radius: var(--adw-radius-full, 9999px);
+}
+
+// Left direction
+.@{classPrefix}-left-radius-zero {
+  border-radius: var(--adw-borderwidth-zero, 0px);
+}
+
+.@{classPrefix}-left-radius-small {
+  border-top-right-radius: var(--adw-radius-small, 4px);
+  border-bottom-right-radius: var(--adw-radius-small, 4px);
+}
+
+.@{classPrefix}-left-radius-medium {
+  border-top-right-radius: var(--adw-radius-medium, 8px);
+  border-bottom-right-radius: var(--adw-radius-medium, 8px);
+}
+
+.@{classPrefix}-left-radius-large {
+  border-top-right-radius: var(--adw-radius-large, 16px);
+  border-bottom-right-radius: var(--adw-radius-large, 16px);
+}
+
+.@{classPrefix}-left-radius-max {
+  border-top-right-radius: var(--adw-radius-full, 9999px);
+  border-bottom-right-radius: var(--adw-radius-full, 9999px);
+}
+
+.@{classPrefix}-close {
+  display: flex;
+  width: 100%;
+}
+
+.@{classPrefix}-close-right {
+  justify-content: flex-end;
+}
+
+.@{classPrefix}-close-left {
+  justify-content: flex-start;
+}
+
+.@{classPrefix}-close-button {
+  position: relative;
+  width: 15px;
+  height: 15px;
+  margin: 16px;
+  background-color: #ddd;
+  border-radius: 100%;
+  cursor: pointer;
+
+  .line {
+    position: absolute;
+    top: 3px;
+    left: 7px;
+    box-sizing: border-box;
+    width: 1px;
+    height: 8px;
+    background-color: #fff;
+    border-radius: 1px;
+  }
+
+  &-leftLine {
+    transform: rotate(-45deg);
+    .line();
+  }
+
+  &-rightLine {
+    transform: rotate(45deg);
+    .line();
+  }
+}

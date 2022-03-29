@@ -1,0 +1,373 @@
+{
+  "menus": {
+    "en": {
+      "/404": [
+        {
+          "path": "/404",
+          "title": "404",
+          "meta": {}
+        }
+      ],
+      "*": [
+        {
+          "path": "/",
+          "title": "Ant Design Mobile",
+          "meta": {}
+        }
+      ],
+      "/components": [
+        {
+          "title": "Basic",
+          "children": [
+            {
+              "path": "/components/button",
+              "title": "Button"
+            },
+            {
+              "path": "/components/list",
+              "title": "List"
+            }
+          ]
+        },
+        {
+          "title": "Data Entry",
+          "children": [
+            {
+              "path": "/components/input",
+              "title": "Input"
+            }
+          ]
+        },
+        {
+          "title": "Feedback",
+          "children": [
+            {
+              "path": "/components/dialog",
+              "title": "Dialog 弹窗"
+            },
+            {
+              "path": "/components/mask",
+              "title": "Mask"
+            },
+            {
+              "path": "/components/progress",
+              "title": "Progress"
+            },
+            {
+              "path": "/components/toast",
+              "title": "Toast"
+            },
+            {
+              "path": "/components/snackbar",
+              "title": "Snackbar"
+            }
+          ]
+        },
+        {
+          "title": "Navigation & Layout",
+          "children": [
+            {
+              "path": "/components/drawer",
+              "title": "Drawer"
+            }
+          ]
+        }
+      ],
+      "/guide": [
+        {
+          "title": "Quick Start",
+          "path": "/guide/quick-start"
+        },
+        {
+          "title": "Migration",
+          "path": "/guide/migration"
+        },
+        {
+          "title": "FAQ",
+          "path": "/guide/faq"
+        },
+        {
+          "title": "CSS Variables",
+          "path": "/guide/css-variables"
+        },
+        {
+          "title": "Theming",
+          "path": "/guide/theming"
+        },
+        {
+          "title": "Load on Demand",
+          "path": "/guide/import-on-demand"
+        },
+        {
+          "title": "Internationalization",
+          "path": "/guide/i18n"
+        },
+        {
+          "title": "About Experimental",
+          "path": "/zh/guide/what-is-experimental"
+        },
+        {
+          "title": "HD (Experimental)",
+          "path": "/guide/hd"
+        },
+        {
+          "title": "SSR (Experimental)",
+          "path": "/guide/ssr"
+        }
+      ],
+      "/": [
+        {
+          "title": "Home",
+          "path": "index"
+        }
+      ]
+    },
+    "zh": {
+      "/zh/404": [
+        {
+          "path": "/zh/404",
+          "title": "404",
+          "meta": {}
+        }
+      ],
+      "*": [
+        {
+          "path": "/zh",
+          "title": "Ant Design Mobile",
+          "meta": {}
+        }
+      ],
+      "/zh/components": [
+        {
+          "title": "基础",
+          "children": [
+            {
+              "path": "/zh/components/button",
+              "title": "Button 按钮"
+            },
+            {
+              "path": "/zh/components/list",
+              "title": "List 列表"
+            }
+          ]
+        },
+        {
+          "title": "数据录入",
+          "children": [
+            {
+              "path": "/zh/components/input",
+              "title": "Input 输入框"
+            }
+          ]
+        },
+        {
+          "title": "反馈",
+          "children": [
+            {
+              "path": "/zh/components/dialog",
+              "title": "Dialog 弹窗"
+            },
+            {
+              "path": "/zh/components/mask",
+              "title": "Mask 遮罩层"
+            },
+            {
+              "path": "/zh/components/progress",
+              "title": "Progress 进度条"
+            },
+            {
+              "path": "/zh/components/toast",
+              "title": "Toast 轻提示"
+            },
+            {
+              "path": "/zh/components/snackbar",
+              "title": "Snackbar 轻弹窗"
+            }
+          ]
+        },
+        {
+          "title": "导航和布局",
+          "children": [
+            {
+              "path": "/zh/components/drawer",
+              "title": "Drawer 抽屉"
+            }
+          ]
+        }
+      ],
+      "/zh/guide": [
+        {
+          "title": "快速上手",
+          "path": "/zh/guide/quick-start"
+        },
+        {
+          "title": "迁移指南",
+          "path": "/zh/guide/migration"
+        },
+        {
+          "title": "常见问题",
+          "path": "/zh/guide/faq"
+        },
+        {
+          "title": "CSS 变量",
+          "path": "/zh/guide/css-variables"
+        },
+        {
+          "title": "主题",
+          "path": "/zh/guide/theming"
+        },
+        {
+          "title": "按需加载",
+          "path": "/zh/guide/import-on-demand"
+        },
+        {
+          "title": "国际化",
+          "path": "/zh/guide/i18n"
+        },
+        {
+          "title": "关于试验性",
+          "path": "/zh/guide/what-is-experimental"
+        },
+        {
+          "title": "高清适配（试验性）",
+          "path": "/zh/guide/hd"
+        },
+        {
+          "title": "服务端渲染 / SSR（试验性）",
+          "path": "/zh/guide/ssr"
+        }
+      ],
+      "/zh": [
+        {
+          "title": "首页",
+          "path": "/zhindex"
+        }
+      ]
+    }
+  },
+  "locales": [
+    {
+      "name": "en",
+      "label": "English"
+    },
+    {
+      "name": "zh",
+      "label": "中文"
+    }
+  ],
+  "navs": {
+    "en": [
+      {
+        "title": "Guide",
+        "path": "/guide"
+      },
+      {
+        "title": "Components",
+        "path": "/components"
+      },
+      {
+        "title": "Discover More",
+        "children": [
+          {
+            "title": "Playground",
+            "path": "https://codesandbox.io/s/antd-mobile-snrxr?file=/package.json"
+          },
+          {
+            "title": "Roadmap",
+            "path": "https://github.com/ant-design/ant-design-mobile/discussions/3924"
+          },
+          {
+            "title": "Contributing",
+            "path": "https://github.com/ant-design/ant-design-mobile/blob/master/.github/CONTRIBUTING.md"
+          }
+        ]
+      },
+      {
+        "title": "Legacy Versions",
+        "children": [
+          {
+            "title": "v2",
+            "path": "https://antd-mobile-v2.surge.sh"
+          },
+          {
+            "title": "v3 alpha",
+            "path": "https://antd-mobile-v3.surge.sh"
+          }
+        ]
+      },
+      {
+        "title": "Releases",
+        "path": "https://github.com/ant-design/ant-design-mobile/releases"
+      },
+      {
+        "title": "GitHub",
+        "path": "https://github.com/ant-design/ant-design-mobile"
+      }
+    ],
+    "zh": [
+      {
+        "title": "指南",
+        "path": "/zh/guide"
+      },
+      {
+        "title": "组件",
+        "path": "/zh/components"
+      },
+      {
+        "title": "了解更多",
+        "children": [
+          {
+            "title": "在线体验",
+            "path": "https://codesandbox.io/s/antd-mobile-snrxr?file=/package.json"
+          },
+          {
+            "title": "Roadmap",
+            "path": "https://github.com/ant-design/ant-design-mobile/discussions/3924"
+          },
+          {
+            "title": "参与贡献",
+            "path": "https://github.com/ant-design/ant-design-mobile/blob/master/.github/CONTRIBUTING.md"
+          }
+        ]
+      },
+      {
+        "title": "返回旧版",
+        "children": [
+          {
+            "title": "v2",
+            "path": "https://antd-mobile-v2.surge.sh"
+          },
+          {
+            "title": "v2 国内站点",
+            "path": "https://antd-mobile-doc-v2.gitee.io"
+          },
+          {
+            "title": "v3 alpha",
+            "path": "https://antd-mobile-v3.surge.sh"
+          }
+        ]
+      },
+      {
+        "title": "发布日志",
+        "path": "https://github.com/ant-design/ant-design-mobile/releases"
+      },
+      {
+        "title": "GitHub",
+        "path": "https://github.com/ant-design/ant-design-mobile"
+      }
+    ]
+  },
+  "title": "Ant Design Mobile",
+  "logo": "https://gw.alipayobjects.com/zos/bmw-prod/b874caa9-4458-412a-9ac6-a61486180a62.svg",
+  "mode": "site",
+  "repository": {
+    "url": "https://github.com/ant-design/ant-design-mobile",
+    "branch": "master",
+    "platform": "github"
+  },
+  "theme": {
+    "hd": {
+      "rules": []
+    }
+  }
+}
